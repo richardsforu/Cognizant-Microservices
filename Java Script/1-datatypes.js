@@ -134,6 +134,103 @@ var p1=new Person('Amith',34);
 var p2=new Person('Sujith',23);
 var p3=new Person('Prekith',28);
 
+//----------------------
+// literal-style object(s)
+//------------------------
+
+//------------------------
+// a. object
+//-------------------------
+
+var config=new Object();
+config.url='http://abc.com';
+config.httpMethod='post';
+config.onSuccess=function(){console.log('on success consuming response')};
+
+// or
+
+var config={
+url:'http://xyz.com',
+httpMethod:'get',
+onSuccess:function(){console.log('on success consuming get response')}
+}
+
+
+config.isSecured=false;
+config.url='http://test.com/';
+
+//------------------------------------
+// Arrays
+//-------------------------------------
+
+// Note: Every Array or Function in .js by default treat as Object
+
+//var menu=new Array();
+//menu[0]='Idle';
+//menu[1]='Sambar';
+//menu[2]='Biryani';
+
+//menu.push('Puri');
+//menu.push('Sambar');
+//menu.push('Idle');
+
+
+var menu=['I1,I2,I3,I4,I5'];
+
+//-----------------------------
+// RegExp
+//------------------------------
+
+var pattern=new RegExp('\\d{4}-\\d{4}-\\d{4}');
+
+// or
+
+var adharPattern=/\d{4}-\d{4}-d{4}/;
+
+
+//-----------------------------
+// Functions
+//-------------------------------
+
+var add=new Function("n1","n2","var result=n1+n2;return result");
+
+// or
+
+function newAdd(n1,n2){
+return n1+n2;
+}
+
+// or
+
+var result=function(n1,n2){
+    return n1+n2;
+}
+
+
+// ---------------------------------------
+// how to access object's property values?
+//----------------------------------------
+
+/*
+2 ways
+
+-> '.' if property name doesn't have a space or -
+else
+-> '[]' , for any property
+
+
+*/
+
+var student={
+name:'Praveen',
+'home-address':'Hyderabad',
+1:'One',
+100:'Hundred'
+};
+
+
+//--------------------------------------------------
+
 
 
 
