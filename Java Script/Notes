@@ -1,2 +1,60 @@
 Java Script Notes
 ----------------------
+
+Ref:
+https://crockford.com
+
+What is Java Script?
+----------------------
+    - Client side language for web-page on browser
+    - Server side language on Node.Js
+
+    +
+
+    - Mobile native application tool support
+    - Desktop application with Electron 
+
+
+----------------------------------------------------
+
+.js featutes
+-----------------
+
+- Functional Programing and OPP
+- Dynamic
+
+- All IO operations by default non-blocling
+- Single Thread process, can execute concurent action while IO happening
+
+
+------------------------------------------------------
+
+Where .js programs can run?
+------------------------------
+
+=> Using .js runtime
+
+browser-envi
+------------
+- chrome        => V8 (c++)
+- firefox       => Rhnino / spider monkey (Java)
+- IE/Edge       => chakra
+- Safari        => Nitro
+
+Other Environments
+----------------------
+- Node.js       => V8
+- JVM           => Rhino/Nashorm
+
+
+--------------------------
+
+Note: Js-lang is based on ECMAScript Spec -> ES
+
+    latest : ES6/ES7
+
+---------------------------------------------------------
+
+
+
+
