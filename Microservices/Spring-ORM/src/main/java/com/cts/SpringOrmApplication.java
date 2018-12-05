@@ -1,5 +1,7 @@
 package com.cts;
 
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -12,16 +14,21 @@ public class SpringOrmApplication {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext ac=SpringApplication.run(SpringOrmApplication.class, args);
+	ApplicationContext ac=SpringApplication.run(SpringOrmApplication.class, args);
 		
 	ProductService ps=	ac.getBean(ProductService.class);
+	Product prod=new Product();
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Product Id");
+	prod.setProdId(sc.nextLine());
+	System.out.println("Product Name");
+	prod.setProdName(sc.nextLine());
+	System.out.println("Product price");
+	prod.setPrice(sc.nextDouble());
+	
 		
-		Product prod=new Product();
-		prod.setPrice(45000);
-		prod.setProdId("P002");
-		prod.setProdName("Laptop");
-		
-		ps.saveProduct(prod);
+
+  ps.saveProduct(prod);
 		
 		System.out.println("--- Done ---");
 		
