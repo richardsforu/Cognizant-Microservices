@@ -71,7 +71,7 @@ Spring Cloud
 ------------------
 
 -> Spring cloud is itself not a cloud.  Its module supports cloud platforms .
-->  To manage cloud applications like AWS, Oracle,  We should create Spring Microservice apps with 16 cloud standard rules
+->  To manage cloud applications like AWS, Oracle,  We should create Spring Microservice apps with 12 cloud standard rules
 
 
 - Distrubuted Configuration - Config Server -> Spring Cloud Bus. [1 ]
